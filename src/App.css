@@ -1,38 +1,62 @@
-.App {
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+* {
+  box-sizing: content-box;
+}
+
+.material-icons {
+  cursor: pointer;
+  font-size: 24px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000000;
   text-align: center;
+  line-height: 30px;
+  border-radius: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.refresh {
+  color: #008000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.delete {
+  color: #ff0000;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background-color: #ffffff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.list-notes {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.block-item-note {
+  position: relative;
+  width: 200px;
+  height: 150px;
+  border: 1px solid;
+  padding: 10px;
+  text-align: center;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+  width: 300px;
 }
 
-.App-link {
-  color: #61dafb;
+textarea {
+  height: 80px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.send {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
 }
